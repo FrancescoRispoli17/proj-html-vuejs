@@ -1,9 +1,13 @@
 <script>
 import { store } from '../store';
+import Awards from '../components/Awards.vue'
 export default{
         name:'About',
         props:{
             store:Object
+        },
+        components:{
+            Awards,
         },
     };
 
@@ -80,34 +84,9 @@ export default{
                  <div id="customer-service-content" class="content-subtitle-display ms-5"> Quisque aliquet, libero consequat elementum convallis, erat imperdiet.</div>
                  <a class="btn Mainbutton btn-margin ms-5" href="/contact">Why Work With Us</a>
            </div>
-           <div class="col-12 text-center">
-          <h2 class="mt-5 mb-5">Awards</h2>
-        </div>
- 
+           <Awards/>
     </div>
-    <div class="row text-center">
 
-            <div class="col-3 text-center fs-5">
-                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png" alt="" width="50%" style="filter: invert(90%) contrast(200%) opacity(0.7);">
-                <span class="d-block">Winner Seo Master MAGT</span>
-                <span>Smart Start Award 2017</span>
-            </div>
-            <div class="col-3 text-center fs-5">
-                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png" alt="" width="50%" style="filter: saturate(5);">
-                <span class="d-block">Top Social Media Agencies</span>
-                <span>Next Partner 2018</span>
-            </div>
-            <div class="col-3 text-center fs-5">
-                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png" alt="" width="50%">
-                <span class="d-block">10 Fastest Growing Abstract</span>
-                <span>Solution Providers 2019</span>
-            </div>
-            <div class="col-3 text-center fs-5">
-                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png" alt="" width="50%" style="filter: invert(90%) saturate(5);">
-                <span class="d-block">Nationl Excellence Agencie</span>
-                <span>Award Winner 2020</span>
-            </div>
-      </div>
     <h2 class="display-4 fw-semibold mt-5 mb-5">We Boost Our Clients’ Bottom Line <br> by Optimizing Their Growth <br> Potential.</h2>
     <div class="row">
             <div class="col-6">

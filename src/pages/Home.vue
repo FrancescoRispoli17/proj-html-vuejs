@@ -1,6 +1,8 @@
 <script>
 import Component from '../components/Homepage/ComponentRepeat.vue';
 import Leading from '../components/Homepage/LeadingOrganisations.vue';
+import Form from '../components/Homepage/Form.vue';
+import Awards from '../components/Awards.vue';
 export default{
         name:'Home',
         props:{
@@ -9,6 +11,8 @@ export default{
         components:{
             Component,
             Leading,
+            Awards,
+            Form
         },
     };
 </script>
@@ -24,17 +28,7 @@ export default{
                 <button type="button" class="btn btn-lg px-5 py-2 my-5 fw-semibold">Our Services <font-awesome-icon icon="fa-solid fa-arrow-right" /></button>
             </div>
             <div class="col-6 right px-5">
-                <div class="text-center bg-white px-4 py-4 rounded-4 shadow-lg" id="a">
-                    <figure class="mx-auto"><img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/marketing-consultant-expert.jpg"></figure>
-                    <span class="d-block fs-5 fw-semibold fs-3">Richard Madsen</span>
-                    <span class="d-block fs-5 text-secondary mt-3">Marketing Consultant Expert</span>
-                    <span class="d-block number fs-5 fw-semibold mb-4 mt-3"><font-awesome-icon icon="fa-solid fa-phone" /> (555)802-1234</span>
-                    <input type="text" class="form-control fs-5 py-3 my-3" placeholder="Your Name*" aria-label="Username" aria-describedby="addon-wrapping">
-                    <input type="text" class="form-control fs-5 py-3 my-3" placeholder="Your Email*" aria-label="Username" aria-describedby="addon-wrapping">
-                    <input type="text" class="form-control fs-5 py-3 my-3" placeholder="Your Phone Number*" aria-label="Username" aria-describedby="addon-wrapping">
-                    <button type="button" class="btn btn-lg Mainbutton w-100 my-1">Get A Callback</button>
-                    <small class="my-3">By submitting my data I agree to be contacted</small>
-                </div>
+                <Form/>
             </div>
         </div>
     </div>
@@ -112,35 +106,13 @@ export default{
                         </div>
                     </div>
                 </div>
-                <div class="col-12 text-center mt-5">
-                    <h2>Awards</h2>
-                </div>
-                <div class="col-3 text-center fs-5">
-                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-a.png" alt="" width="50%" style="filter: invert(90%) contrast(200%) opacity(0.7);">
-                    <span class="d-block">Winner Seo Master MAGT</span>
-                    <span>Smart Start Award 2017</span>
-                </div>
-                <div class="col-3 text-center fs-5">
-                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-b.png" alt="" width="50%" style="filter: saturate(5);">
-                    <span class="d-block">Top Social Media Agencies</span>
-                    <span>Next Partner 2018</span>
-                </div>
-                <div class="col-3 text-center fs-5">
-                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-c.png" alt="" width="50%">
-                    <span class="d-block">10 Fastest Growing Abstract</span>
-                    <span>Solution Providers 2019</span>
-                </div>
-                <div class="col-3 text-center fs-5">
-                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/award-d.png" alt="" width="50%" style="filter: invert(90%) saturate(5);">
-                    <span class="d-block">Nationl Excellence Agencie</span>
-                    <span>Award Winner 2020</span>
-                </div>
+                <Awards/>
             </div>
         </div>
     </div>
 
-    <div class="container pt-5">
-        <div class="row pt-5">
+    <div class="container py-5">
+        <div class="row py-5">
             <div class="col-6">
                 <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/large-testimonial.jpg" alt="" width="100%" class="rounded-3">
             </div>
@@ -148,6 +120,49 @@ export default{
                 <p class="fw-semibold fs-3 px-5 mt-5">"The team at Avada Marketing Consultant is fabulous. they hlped us unlock our potential online and offline. We have experienced year growth due to their progressive approach."</p>
                 <span class="d-block fs-5 px-5 mt-5">Kate Schadler</span>
                 <small class="px-5">Marketing Consultant - Abstract</small>
+            </div>
+        </div>
+    </div>
+     <!--Marketing resources-->
+    <div class="py-5" style="background-color: #F6F6F7;" id="marketing-resources">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-6 mb-5">
+                    <h2 class="display-4 fw-semibold">Marketing Resources: Insider Advice on How to Increase Online Sales</h2>
+                </div>
+                <div class="col-6 position-relative mb-5">
+                    <button class="btn btn-lg Mainbutton position-absolute top-50 end-0">Explore All Resources</button>
+                </div>
+                <div class="col-4 mb-5">
+                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/blog-posts-6-1200x800.jpg" alt="a" class="rounded-3">
+                    <p class="fw-semibold fs-3 pe-3 mt-3">Marketing Tips And Tricks For Your Website</p>
+                </div>
+                <div class="col-4 mb-5">
+                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/blog-posts-5-1200x800.jpg" alt="b" class="rounded-3">
+                    <p class="fw-semibold fs-3 pe-3 mt-3">How to Write Stunning Blog Post Titles</p>
+                </div>
+                <div class="col-4 mb-5">
+                    <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/blog-posts-4-1200x800.jpg" alt="c" class="rounded-3">
+                    <p class="fw-semibold fs-3 pe-3 mt-3">Techniques to Reduce Facebook Ads Spend</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Black container-->
+    <div class="py-5" style="background-color: black;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-6 text-white">
+                    <h1 class="display-2 fw-semibold">Let's Make Things Happen</h1>
+                    <p class="fw-semibold fs-3 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae delectus numquam sequi vero modi.</p>
+                    <hr class="w-25 my-5">
+                    <em><p class="fw-semibold fs-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis temporibus sit optio alias unde commodi veritatis delectus sed, corporis totam aut aliquid consequatur ea nobis cum. Beatae a ratione animi!"</p></em>
+                    <span class="d-block fs-5 mt-5 mb-2">George Anderson</span>
+                    <small>MDigitalbox CEO</small>
+                </div>
+                <div class="col-6 pb-5">
+                    <Form class="w-75 ms-auto"/>
+                </div>
             </div>
         </div>
     </div>

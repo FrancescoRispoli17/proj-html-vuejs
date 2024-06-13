@@ -19,7 +19,7 @@ export default{
                     <img v-for="(image,index) in section.images" class="position-absolute" :src="getimage(image)" style="width: 500px;">
             </div>
             <div class="col-5 py-5">
-                <div id="aaa" class="rounded-circle text-white fs-5 text-center " 
+                <div id="aaa" class="rounded-circle text-white fs-5 text-center pt-1" 
                     :class="{'bg-primary':section.logoText.id==0, 'bg-warning':section.logoText.id==1, green:section.logoText.id==2}">
                      <font-awesome-icon icon="fa-brands fa-squarespace" style="margin-top: 5px;"/> 
                 </div>
